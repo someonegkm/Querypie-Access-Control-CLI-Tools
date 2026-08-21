@@ -1,7 +1,6 @@
 # API 호출 구조
 
 이 문서는 권한 변경 시 API가 어떤 순서로 호출되는지, 어떤 구간이 서버에 부담이 될 수 있는지 정리합니다.
-공개본의 URL, 도메인, UUID, 계정값은 모두 샘플입니다.
 
 ## 부담 기준
 
@@ -75,7 +74,7 @@ GET /api/external/v3/iam/users?pageNumber={page}&pageSize={pageSize}
 | 4 | `POST` 또는 `DELETE /api/external/v2/kac/access-controls/users/{userUuid}/roles` | 변경 | role 부여/회수 |
 | 5 | 사용자 KAC role 재조회 | 낮음~중간 | 변경 후 검증 |
 
-## 샘플 payload
+## 예시 payload
 
 ```json
 {
