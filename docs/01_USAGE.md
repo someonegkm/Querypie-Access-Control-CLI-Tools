@@ -19,7 +19,7 @@ py .\acl_cli.py
 | 설정 | 기본값 | 설명 |
 |---|---:|---|
 | `ACTIVE_ENV` | `demo` | API 접속 환경. CSV 환경 값도 이 값을 따릅니다. |
-| `ENVIRONMENTS.demo.base_url` | 샘플 URL | 실제 테스트 API base URL로 교체합니다. |
+| `ENVIRONMENTS.demo.base_url` | API URL | 실제 테스트 API base URL로 교체합니다. |
 | `INSECURE_SSL` | `False` | 자체 서명 인증서 테스트 환경에서만 `True`로 변경합니다. |
 | `USE_SAC_ROLE_CACHE` | `False` | SAC role 전체 목록을 메모리에 올려 후보 검색에 재사용합니다. |
 | `USE_LOCAL_REFERENCE_CSV` | `False` | CSV 기록 입력 기본값을 기존 이력에서 찾습니다. |
@@ -85,7 +85,7 @@ CSV에 있는 값도 실제 변경 전 API와 다시 대조합니다.
 
 ## 수동 테스트
 
-1. 샘플 URL을 테스트 API로 바꾼 뒤 토큰 입력 화면과 메뉴가 뜨는지 확인합니다.
+1. API URL을 테스트 환경에 맞게 바꾼 뒤 토큰 입력 화면과 메뉴가 뜨는지 확인합니다.
 2. CSV 참조 옵션을 켠 뒤 SAC/DAC/KAC grant 직전까지 진행합니다.
 3. `CSV/API 사전 검증` 표가 출력되는지 확인합니다.
 4. CSV의 UUID나 이름을 일부러 틀리게 바꾸면 `PRECHECK_FAIL` 후 실제 변경이 중단되어야 합니다.
