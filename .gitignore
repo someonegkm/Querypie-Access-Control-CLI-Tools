@@ -1,0 +1,27 @@
+# Local backup/history snapshots
+.backup/
+
+# Python runtime cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Local execution reports and reference data
+reports/
+reference/
+*.csv
+
+# Local secrets or operator-only files
+.env
+.env.*
+token.txt
+tokens.txt
+*token*.txt
+*.key
+*.pem
+
+# Editor/OS noise
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini
